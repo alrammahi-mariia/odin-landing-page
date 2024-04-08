@@ -8,8 +8,6 @@
 
 body {
     font-family: Roboto, sans-serif;
-    /* overflow: hidden; */
-    height: 100vh;
     display: flex;
     flex-direction: column;
     color: #E5E7EB;
@@ -57,7 +55,7 @@ ul {
     color: #E5E7EB;
 }
 
-.card {
+.banner-card {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -72,13 +70,13 @@ ul {
 
 }
 
-.card h1 {
+.banner-card h1 {
     color: #f9faf8;
     font-size: 48px;
     font-weight:900;
 }
 
-.card p {
+.banner-card p {
     flex: 1;
 }
 
@@ -102,8 +100,23 @@ section > h1 {
     justify-content: center;
     align-items: center;
     margin: 40px 150px;
+    gap: 50px;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    gap: 10px;
+}
+
+.card > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* ensures that all images are the same size without breaking the aspect ratio*/ 
+    object-position: 20% 30%; /* Center the image within its container */
+    border-radius: 10px;
+}
 
 button {
     color:#E5E7EB;
@@ -115,6 +128,23 @@ button {
     border-style: none;
 }
 
+.quote {
+    background-color: #E5E7EB;
+    align-items: flex-end;
+    padding: 100px 200px;
+    gap: 20px;
+}
+
+.quote .text {
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 24px;
+}
 
 footer {
     display: flex;
@@ -124,3 +154,4 @@ footer {
     color: #E5E7EB;
     height: 10vh;
 }
+
